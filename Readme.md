@@ -2,16 +2,16 @@
 
 ![Faker.js](https://raw.githubusercontent.com/Marak/faker.js/master/logo.png)
 
-[![Build Status](https://travis-ci.org/Marak/faker.js.svg?branch=master)](https://travis-ci.org/Marak/faker.js)
+[![Build Status](https://travis-ci.org/Marak/faker.js.svg?branch=master)](https://travis-ci.org/Marak/faker.js) [![Coverage Status](https://coveralls.io/repos/github/Marak/faker.js/badge.svg?branch=master)](https://coveralls.io/github/Marak/faker.js?branch=master)
 
 [![npm version](https://badge.fury.io/js/faker.svg)](http://badge.fury.io/js/faker)
 
-[![OpenCollective](https://opencollective.com/fakerjs/backers/badge.svg)](#backers) 
+[![OpenCollective](https://opencollective.com/fakerjs/backers/badge.svg)](#backers)
 [![OpenCollective](https://opencollective.com/fakerjs/sponsors/badge.svg)](#sponsors)
 
 ## Demo
 
-[https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html](https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html)
+[https://rawgit.com/Marak/faker.js/master/examples/browser/index.html](https://rawgit.com/Marak/faker.js/master/examples/browser/index.html)
 
 ## Hosted API Microservice
 
@@ -112,6 +112,7 @@ This will interpolate the format string with the value of methods `name.lastName
   * future
   * between
   * recent
+  * soon
   * month
   * weekday
 * fake
@@ -125,6 +126,7 @@ This will interpolate the format string with the value of methods `name.lastName
   * currencyName
   * currencySymbol
   * bitcoinAddress
+  * ethereumAddress
   * iban
   * bic
 * hacker
@@ -206,6 +208,7 @@ This will interpolate the format string with the value of methods `name.lastName
   * phoneFormats
 * random
   * number
+  * float
   * arrayElement
   * objectElement
   * uuid
@@ -215,6 +218,7 @@ This will interpolate the format string with the value of methods `name.lastName
   * image
   * locale
   * alphaNumeric
+  * hexaDecimal
 * system
   * fileName
   * commonFileName
@@ -238,6 +242,8 @@ Setting a new locale is simple:
 
 ```js
 // sets locale to de
+faker.setLocale("de");
+// or
 faker.locale = "de";
 ```
 
@@ -254,6 +260,7 @@ faker.locale = "de";
  * en_IE
  * en_IND
  * en_US
+ * en_ZA
  * en_au_ocker
  * es
  * es_MX
@@ -270,6 +277,7 @@ faker.locale = "de";
  * nl
  * pl
  * pt_BR
+ * pt_PT
  * ru
  * sk
  * sv
@@ -282,7 +290,7 @@ faker.locale = "de";
 
 ### Individual Localization Packages
 
-As of vesion `v3.0.0` faker.js supports incremental loading of locales. 
+As of vesion `v3.0.0` faker.js supports incremental loading of locales.
 
 By default, requiring `faker` will include *all* locale data.
 
@@ -349,7 +357,7 @@ var randomCard = faker.helpers.createCard(); // random contact card containing m
 
 ## Building faker.js
 
-faker uses [gulp](http://gulpjs.com/) to automate it's build process. Running the following build command will generate new browser builds, documentation, and code examples for the project.
+faker uses [gulp](http://gulpjs.com/) to automate its build process. Running the following build command will generate new browser builds, documentation, and code examples for the project.
 
 ```
 npm run-script build
@@ -470,4 +478,3 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 <a href="https://opencollective.com/fakerjs/sponsor/27/website" target="_blank"><img src="https://opencollective.com/fakerjs/sponsor/27/avatar.svg"></a>
 <a href="https://opencollective.com/fakerjs/sponsor/28/website" target="_blank"><img src="https://opencollective.com/fakerjs/sponsor/28/avatar.svg"></a>
 <a href="https://opencollective.com/fakerjs/sponsor/29/website" target="_blank"><img src="https://opencollective.com/fakerjs/sponsor/29/avatar.svg"></a>
-
